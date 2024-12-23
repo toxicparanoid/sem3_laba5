@@ -169,10 +169,24 @@ public:
 
         std::cout << "Игра окончена. Всего мин: " << mines << ", найдено мин: " << flags << "\n";
     }
+
+    void showLogo() {
+
+        std::cout << "Добро пожаловать в игру 'Сапёр'!\n";
+        std::cout << "Начало через: \n";
+        for (int i = 3; i > 0; i--) {
+            std::cout << i << std::endl;
+            std::this_thread::sleep_for(std::chrono::seconds(1));
+        }
+        system("clear");
+
+    }
+
 };
 
 int main() {
     int size, mines;
+
     std::cout << "Выберите уровень сложности:\n";
     std::cout << "1 - Легкий (9x9, 10 мин)\n";
     std::cout << "2 - Средний (16x16, 40 мин)\n";
@@ -201,6 +215,8 @@ int main() {
     }
 
     Minesweeper game(size, mines);
+
+    game.showLogo();
     game.play();
 
     return 0;
