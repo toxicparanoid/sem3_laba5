@@ -154,6 +154,21 @@ public:
             makeMove();
 
             if (gameOver) {
+                system("clear");
+
+                std::cout << "  ########     ######      ######    ######     #####  ##  ##" << std::endl;
+                std::cout << "  ##    ##    ##    ##    ##    ##   ##  ##    ##  ##  ##  ##" << std::endl;
+                std::cout << "  ##   ##    ##      ##  ##      ##  ##   ##  ##   ##  ##  ##" << std::endl;
+                std::cout << "  #######    ##      ##  ##      ##  ##    ####    ##  ##  ##" << std::endl;
+                std::cout << "  ##   ##    ##      ##  ##      ##  ##            ##  ##  ##" << std::endl;
+                std::cout << "  ##    ##   ##      ##  ##      ##  ##            ##  ##  ##" << std::endl;
+                std::cout << "  ##    ##    ##    ##    ##    ##   ##            ##        " << std::endl;
+                std::cout << "  ########     ######      ######    ######    ######  ##  ##" << std::endl;
+
+                std::this_thread::sleep_for(std::chrono::seconds(1));
+
+                system("clear");
+
                 std::cout << "Вы проиграли! Вы наткнулись на мину.\n";
                 break;
             }
