@@ -8,7 +8,7 @@
 
 // константы для уровней сложности
 const int EASY_SIZE = 9;
-const int EASY_MINES = 10;
+const int EASY_MINES = 1;
 const int MEDIUM_SIZE = 16;
 const int MEDIUM_MINES = 40;
 const int HARD_SIZE = 24;
